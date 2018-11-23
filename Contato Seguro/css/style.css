@@ -1,0 +1,213 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: Arial; 
+	color: #ffffff;
+}
+header {
+	height: 361px;
+	background: linear-gradient(#82B4BD, #43A1AC);
+}
+#cabecalho {
+	height: 120px;
+	width: 996px;     
+	margin: 0 auto;   
+	border-bottom: solid 1px #006666;
+}
+#cabecalho2 {
+	height: 210px;
+	width: 996px;     
+	margin: 0 auto;   
+}
+#cabecalho #simbolo {
+	width: 200px; 
+	height: 90px;
+	float: left; 			
+	background: url(../img/simbolo3.png);
+	margin-top: 8px;
+}
+#cabecalho2 #atendente {
+	width: 135px; 
+	height: 220px;
+	float: left; 			/*para flutuar o elemento, ocupa só seu espaço e já chama o proximo elemento de baixo ao seu lado*/ 
+	background: url(../img/atendente2.png);
+	margin-top: 20px;	
+}
+#cabecalho2 h2 {
+	float: left;
+	margin-top: 50px;
+	margin-left: 300px;
+	border-bottom: solid 1px #ffffff;
+}
+#cabecalho2 h3 {
+	float: left;
+	margin: auto;
+}
+#cabecalho nav a {  /*tag 'a' precisa de config prorpria, nao obedece o body, n tem propriedade margin*/
+	color: #ffffff;
+	font-size: 10px;
+	font-family: Arial;
+	width: 186px;			/*evitar numero impar*/
+	display: inline-block; /*faz elemento que n aceita, aceitar medidas e margens sem se esticar toda linha*/
+	padding: 4px;
+	text-decoration: none;  /* none tira o sublinhado*/
+	text-align: center; 
+	transition: background 1.5s;
+	margin-top: 20px;
+}
+#comite {
+	border: 1px solid #ffffff;
+}	
+#secao-conteudo {
+	width: 996px;
+	height: 250px;
+	margin: 40px auto;
+	text-align: center;
+	border-radius: 20px;
+	padding: 40px 40px;
+}
+#denuncia {
+	width: 180px; 
+	height: 200px;
+	float: left; 
+	background: url(../img/denuncia.jpg);
+	margin-left: 80px;
+	padding-right: 60px;	
+}
+#sugestao {
+	width: 180px; 
+	height: 200px;
+	float: left; 
+	background: url(../img/sugestao.jpg);
+	padding-right: 85px;	
+}
+#duvida {
+	width: 200px; 
+	height: 200px;
+	float: left; 
+	background: url(../img/duvidas.jpg);
+}
+#conteudo h3 {
+	color: #82B4BD;
+	font-size: 10px;
+	float: left;
+	margin-left: 100px;
+	padding: 5px 20px 5px 20px;
+	border: solid 1px #000000;
+	border-color: #82B4BD;
+}
+#secao-protocolo {
+	width: 996px;
+	height: 100px;
+	display: inline-block;
+	margin: 40px auto;
+	text-align: center;
+	border-radius: 20px;
+}
+#protocolo table input{
+	width: 450px;
+	border: #ffffff;
+	border-bottom: 1px solid #c0c0c0;
+	padding: 4px;
+	font-family: Arial;
+	outline: none;
+	float: left;
+}
+#protocolo table button { 
+	background: #ffffff;
+	border: 1px solid #c0c0c0;	
+}
+#lupa { 
+	width: 100px; 
+	height: 110px;
+	float: left; 			
+	background: url(../img/lupa.png);
+	margin-left:420px;	
+}
+
+#secao-texto {
+	height: 200px;
+	width: 996px;  
+	margin: 0 auto;
+}
+
+#secao-texto h1 {
+	color: #2e6382;
+	border-bottom: 1px solid #c0c0c0;
+}
+#lorem {
+	color: #000000;
+	font-size: 15px;
+}
+#secao-canal {
+	height: 680px;
+	width: 996px;  
+	margin: 0 auto;
+}
+#secao-canal h1 {
+	color: #2e6382;
+	border-bottom: 1px solid #c0c0c0;
+}
+#figura-canal {
+	height: 480px;
+	width: 900px;
+	float: left;
+	background: url(../img/canal.jpg);
+	margin-left: 50px;
+}	
+footer#rodape {
+	background: #c0c0c0;
+	color: #ffffff;
+	text-align: center;
+	bottom:0;			/*poderia por uma div e um h1 pra manipular melhor o texto ali embaixo*/
+	width: 100%;
+	height: 200px;
+	padding: 10px;
+	/*box-shadow: 0 -3px 17px #000000; nao faz sentido pela lampada*/ 
+}
+#footer {
+	height: 200;
+	width: 996px;  
+	margin: 0 auto;
+}
+#simbolo {
+	background: url(../img/simbolo.png);
+	height: 100px;
+	width: 190px;
+	float: left;
+	
+}	
+#rodape h1 {
+	font-size: 12px;
+	float: left;
+	color: #000000;
+	padding-right: 60px;
+	padding-left: 100px;
+}
+#rodape h2 {
+	font-size: 12px;
+	float: left;
+	color: #000000;
+	margin-top: 70px;
+	margin-left: 200px;
+}
+#linkedin {
+	background: url(../img/linkedin.png);
+	height: 32px;
+	width: 32px;
+	float: left;
+	margin-left: 180px;
+	margin-bottom: 80px;
+}
+#youtube {
+	background: url(../img/youtube.png);
+	height: 32px;
+	width: 32px;
+	float: left;
+}		
+#skype {
+	background: url(../img/skype.png);
+	height: 32px;
+	width: 32px;
+	float: left;
+}	
