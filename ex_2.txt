@@ -1,0 +1,23 @@
+public class test {
+
+    public static void main(String args[]) {
+        long n = 21;
+
+        while (1 == 1) {
+            boolean all = true;
+            for (int i = 1; i < 21; i++) {
+                all = true;
+                if (n % i != 0) {
+                    all = false;
+                    break;
+                }
+            }
+            if (all) {
+                System.out.println(n);
+                System.exit(0);
+            }
+
+            n++;
+        }
+    }
+}
