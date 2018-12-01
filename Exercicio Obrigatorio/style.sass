@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900')
+
+body
+    font-family: "Roboto"
+
+/* Helpers*/ 
+.h1-titulo
+    font-weight: bold
+    text-transform: uppercase
+
+.line
+    border-bottom: 1px solid rgb(9, 114, 128)
+    padding: 20px 0px 0px 0px
+
+/* Header */ 
+.header-web
+    background-color: rgb(126, 179, 187)
+    // height: 700px
+    padding: 20px 0px 0px 0px
+    & .menu
+        text-transform: uppercase
+        & .item
+            padding: 30px 0px 0px 0px
+            text-align: center
+        & .btn
+            border: 1px solid white
+            border-radius: 0px
+            margin: 24px 0px 0px 0px
+        & a
+            color: white
+            &:hover
+                color: white
+            &:visited
+                color: white
+    & hr
+        border-top: 1px solid rgb(9, 114, 128)
+
+/* Header mobile*/ 
+.header-mobile
+    background-color: rgb(126, 179, 187)
+    & .logo, & .menu
+        text-align: center
+    & .menu
+        & .fa-bars
+            padding: 15px 0px 0px 0px
+        & a
+            color: white
+    & #menu-mobile
+        & a
+            color: white   
+            text-transform: uppercase   
+        
+    
+main
+    & .vitrine
+        background-color: rgb(126, 179, 187)
+        height: 500px
+    & .infos
+        padding: 170px 0px 0px 0px
+        text-align: center
+        & .h1-title
+            color: #002c3b
+            display: block
+            font-size: 38px
+            font-weight: bold
+            text-transform: uppercase
+            & .margin-title
+                margin-left: 200px
+        & .h2-title
+            color: white
+            font-size: 38px
+            font-weight: bold
+            text-transform: uppercase
+        & .line-image
+            & img
+                margin: auto
+                padding: 0px 0px 0px 170px
+                width: 100%
+    & .links
+        padding: 0px 0px 110px 0px
+        & .column
+            padding: 50px 0px 0px 0px
+            text-align: center
+            & .image-padding
+                padding: 0px 0px 0px 40px
+            & .button
+                & .btn
+                    border: 1px solid #5fa7b2
+                    border-radius: 0px
+                    color: #5fa7b2
+                    text-transform: uppercase
+    & .search
+        padding: 0px 0px 170px 0px
+        & .input
+            & .input-text
+                border: none
+                border-bottom: 1px solid #a3a1a6
+                display: block
+                width: 100%
+            & .btn
+                bottom: 4px
+                border: 1px solid #a3a1a6
+                border-radius: 0px
+                color: #a3a1a6
+                text-transform: uppercase
+                padding: 0px 6px 0px 6px
+                position: absolute
+                right: 16px
+            & .image-search
+                bottom: -36px                
+                left: -80px
+                position: absolute
+    & .informativos
+        margin: 0px 0px 170px 0px
+    & .informativos, & .funcionamento
+        & .titulo
+            color: #002c3b
+            font-size: 25px
+            font-weight: bold
+            text-transform: uppercase
+        & .texto
+            padding-top: 55px
+            text-align: justify
+    & .funcionamento
+        margin: 0px 0px 150px 0px
+    & .footer-web
+        background-color: #d9dade
+        padding: 0px 0px 50px 0        
+        & .column
+            margin: 60px 0px 0px 0px
+            text-align: justify
+            & .texto, & .buttons
+                padding: 0px 30px 0px 30px
+            & .texto--nomargin
+                padding: 0px 30px 0px 0px
+            & .buttons
+                text-align: center
+                & .btn
+                    border: 1px solid #565655
+                    border-radius: 0px
+        & .column--nomargin
+            margin: 40px 0px 0px 0px
+            & .buttons
+                margin: 0px 0px 10px 0px
+                & a
+                    color: #565655
+        & .column--center
+            text-align: center
+
+@media screen and (max-width: 768px)
+    main
+        & .search
+            padding: 0px 0px 60px 0px
+        & .footer-web
+            & .column
+                text-align: center
+
+@media screen and (max-width: 992px)
+    main
+        & .search
+            padding: 0px 0px 60px 0px
+        & .footer-web
+            & .column
+                text-align: center

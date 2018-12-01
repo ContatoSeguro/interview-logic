@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
+body {
+  font-family: "Roboto"; }
+
+/* Helpers */
+.h1-titulo {
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.line {
+  border-bottom: 1px solid #097280;
+  padding: 20px 0px 0px 0px; }
+
+/* Header */
+.header-web {
+  background-color: #7eb3bb;
+  padding: 20px 0px 0px 0px; }
+  .header-web .menu {
+    text-transform: uppercase; }
+    .header-web .menu .item {
+      padding: 30px 0px 0px 0px;
+      text-align: center; }
+    .header-web .menu .btn {
+      border: 1px solid white;
+      border-radius: 0px;
+      margin: 24px 0px 0px 0px; }
+    .header-web .menu a {
+      color: white; }
+      .header-web .menu a:hover {
+        color: white; }
+      .header-web .menu a:visited {
+        color: white; }
+  .header-web hr {
+    border-top: 1px solid #097280; }
+
+/* Header mobile */
+.header-mobile {
+  background-color: #7eb3bb; }
+  .header-mobile .logo, .header-mobile .menu {
+    text-align: center; }
+  .header-mobile .menu .fa-bars {
+    padding: 15px 0px 0px 0px; }
+  .header-mobile .menu a {
+    color: white; }
+  .header-mobile #menu-mobile a {
+    color: white;
+    text-transform: uppercase; }
+
+main .vitrine {
+  background-color: #7eb3bb;
+  height: 500px; }
+main .infos {
+  padding: 170px 0px 0px 0px;
+  text-align: center; }
+  main .infos .h1-title {
+    color: #002c3b;
+    display: block;
+    font-size: 38px;
+    font-weight: bold;
+    text-transform: uppercase; }
+    main .infos .h1-title .margin-title {
+      margin-left: 200px; }
+  main .infos .h2-title {
+    color: white;
+    font-size: 38px;
+    font-weight: bold;
+    text-transform: uppercase; }
+  main .infos .line-image img {
+    margin: auto;
+    padding: 0px 0px 0px 170px;
+    width: 100%; }
+main .links {
+  padding: 0px 0px 110px 0px; }
+  main .links .column {
+    padding: 50px 0px 0px 0px;
+    text-align: center; }
+    main .links .column .image-padding {
+      padding: 0px 0px 0px 40px; }
+    main .links .column .button .btn {
+      border: 1px solid #5fa7b2;
+      border-radius: 0px;
+      color: #5fa7b2;
+      text-transform: uppercase; }
+main .search {
+  padding: 0px 0px 170px 0px; }
+  main .search .input .input-text {
+    border: none;
+    border-bottom: 1px solid #a3a1a6;
+    display: block;
+    width: 100%; }
+  main .search .input .btn {
+    bottom: 4px;
+    border: 1px solid #a3a1a6;
+    border-radius: 0px;
+    color: #a3a1a6;
+    text-transform: uppercase;
+    padding: 0px 6px 0px 6px;
+    position: absolute;
+    right: 16px; }
+  main .search .input .image-search {
+    bottom: -36px;
+    left: -80px;
+    position: absolute; }
+main .informativos {
+  margin: 0px 0px 170px 0px; }
+main .informativos .titulo, main .funcionamento .titulo {
+  color: #002c3b;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase; }
+main .informativos .texto, main .funcionamento .texto {
+  padding-top: 55px;
+  text-align: justify; }
+main .funcionamento {
+  margin: 0px 0px 150px 0px; }
+main .footer-web {
+  background-color: #d9dade;
+  padding: 0px 0px 50px 0; }
+  main .footer-web .column {
+    margin: 60px 0px 0px 0px;
+    text-align: justify; }
+    main .footer-web .column .texto, main .footer-web .column .buttons {
+      padding: 0px 30px 0px 30px; }
+    main .footer-web .column .texto--nomargin {
+      padding: 0px 30px 0px 0px; }
+    main .footer-web .column .buttons {
+      text-align: center; }
+      main .footer-web .column .buttons .btn {
+        border: 1px solid #565655;
+        border-radius: 0px; }
+  main .footer-web .column--nomargin {
+    margin: 40px 0px 0px 0px; }
+    main .footer-web .column--nomargin .buttons {
+      margin: 0px 0px 10px 0px; }
+      main .footer-web .column--nomargin .buttons a {
+        color: #565655; }
+  main .footer-web .column--center {
+    text-align: center; }
+
+@media screen and (max-width: 768px) {
+  main .search {
+    padding: 0px 0px 60px 0px; }
+  main .footer-web .column {
+    text-align: center; } }
+@media screen and (max-width: 992px) {
+  main .search {
+    padding: 0px 0px 60px 0px; }
+  main .footer-web .column {
+    text-align: center; } }
+
+/*# sourceMappingURL=style.css.map */
