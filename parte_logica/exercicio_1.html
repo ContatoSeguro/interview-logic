@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function start(){
+			// O programa basicamente calcula cada raiz quinta e verifica se elas são cúbicas e quadraticas
+			var num = 1;
+			var cont = 0;
+			var result;
+			while(cont < 3){
+				//pega o numero e faz potencia de 5
+				numQ = Math.pow(num,5);
+				//verifica se é raiz cubica
+				if(Math.cbrt(numQ)%1 == 0){
+					//verifica se é raiz quadrática
+					if(Math.sqrt(numQ)%1 == 0){
+						//caso passe nos testes, imprime
+						var html = document.createTextNode("Numero "+(cont+1)+": "+numQ+"\n");
+						document.getElementById('resultado').appendChild(html);
+						console.log(numQ);
+						cont++;
+					}
+				}
+				num++;
+			}
+		}
+	</script>
+</head>
+<body>
+	Tres primeiros números com raiz quadrada cúbica e quinta inteira.<br>
+	<div id="resultado" style="white-space: pre-wrap;"></div>
+
+<script type="text/javascript">
+	start();
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		//Pode ser inserido aqui qualquer array maior que 1 de valores positivos que será feito o calculo
+		var n = Array(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20);
+		
+
+		//faz o mmc de 2 valores
+		function mmc2(num1,num2){
+			var fat1,fat2;
+			fat1 = num1;
+			fat2 = num2;
+			//adiciona o numero novamente a si até que sejam iguais
+			while(fat1!=fat2){
+				if(fat1<fat2){
+					fat1+=num1;
+				}else{
+					fat2+=num2;
+				}
+			}
+			//retorna o mmc
+			return fat1;
+		}
+
+		//realiza o mmc dos 2 primeiros números, depois do resultado com o proximo e assim em diante
+		function mmcn(n){
+			resultado=n[0];
+			for(var i=1; i<n.length; i++){
+				resultado=mmc2(resultado,n[i]);
+			}
+			//imprime o resultado
+			console.log(resultado);
+			var html = document.createTextNode("MMC Sequencia: "+resultado);
+			document.getElementById('resultado').appendChild(html);
+		}
+	</script>
+</head>
+<body>
+	<div id="resultado" style="white-space: pre-wrap;"></div>
+
+<script type="text/javascript">
+	mmcn(n);
+</script>
+</body>
+</html>
