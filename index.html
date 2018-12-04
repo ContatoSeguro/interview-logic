@@ -8,58 +8,210 @@
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<!-- Bootstrap 4.1.3 -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" >
+
+	<!-- Bootstrap JS 4.1.3 -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" ></script>
+
+	<!-- Seletor de Bandeiras -->
+	<script type="text/javascript" src="js/flag_select.js"></script>
+
+	<!-- Meu estilo -->
 	<link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-	<div class="container-fluid top">
-		<div class="row justify-content-center">
-			<div class="col-md-9 col-sm-12 w-100">
-				<nav class="navbar w-100 navbar-expand-md ">
+	<div class="container-fluid top pb-0">
+		<!-- Topo do Site (Parte Azul)-->
+		<div class="d-flex flex-row justify-content-center">
+			<!-- Barra de Navegação -->
+			<div class="col-md-10">
+				<nav class="navbar w-100 navbar-expand-lg justify-content-between navbar-dark">
+					<!-- Barra de navegação não minimizada -->
+					<a class="navbar-brand" href="#">
+						<!-- Logo Contato Seguro -->
+						<img class="my-0 p-0" src="img/contato.png" height="80" alt="Logo Contato Seguro">
+					</a>
+
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				    <span class="navbar-toggler-icon">MENU</span>
+						<!-- Botão de expansão do menu responsivo -->
+				    <span class="navbar-toggler-icon"></span>
 				  	</button>
 
-					<div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-						<a class="navbar-brand" href="#">
-							<img class="mx-auto" src="img/contato.png" height="60" alt="Logo Contato Seguro">
-						</a>
+					<div class="collapse navbar-collapse w-100 justify-content-end" id="navbarSupportedContent">
+						<!-- menu responsivo aberto/fechado -->
 					    <ul class="navbar-nav">
+					    	<!-- Botoes -->
 							<li class="nav-item mx-2">
-					        	<a class="col btn btn-outline-light btn-main border-0" href="#">CONHEÇA A CONTATO SEGURO</a>
+					        	<a class="col btn btn-outline-light m-2 border-0 rounded-0" href="#">CONHEÇA A CONTATO SEGURO</a>
 							</li>
+
 							<li class="nav-item mx-2">
-							    <a class="col btn btn-outline-light btn-main border-0" href="#">CONTATO</a>
+							    <a class="col btn btn-outline-light m-2 border-0 rounded-0" href="#">CONTATO</a>
 							</li>
+
 						    <li class="nav-item mx-2">
-						    	<a class="col btn btn-outline-light btn-main" href="#">ACESSO COMITÊ</a>
+						    	<a class="col btn btn-outline-light m-2 rounded-0" href="#">ACESSO COMITÊ</a>
+						    </li>
+						    <li class="nav-item dropdown mx-auto ml-5 my-auto mx-lg-2">
+						        <a class="nav-link dropdown-toggle mx-2 px-2" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						          <img id="dropdown-main" width="40px" src="img/br.png">
+						        </a>
+						        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						        	<a class="dropdown-item" href="#" onclick="changeFlag('img/us.png');"><img src="img/us.png"> English</a>
+						        	<a class="dropdown-item" href="#" onclick="changeFlag('img/gr.png');"><img src="img/gr.png"> Deutch</a>
+						        	<a class="dropdown-item" href="#" onclick="changeFlag('img/br.png');"><img src="img/br.png"> Português</a>
+						        </div>
 						    </li>
 						</ul>
 					</div>
+
 				</nav>
 			</div>
 		</div>
+		<!-- Fim da Barra de Navegação -->
+
+		<!-- Separador -->
 		<div class="row justify-content-center">
-			<div class="col-md-10">
+			<div class="col-md-11 ">
 				<hr class="divisor" />
 			</div>
 		</div>
-		<div class="row justify-content-center">
-			
-			<div class="col-md-3">
-				<h1 style="color:#182438;"><b>VIU UMA IRREGULARIDADE?</b></h1>
+
+		<!-- Atendente e texto -->
+		<div class="d-flex flex-row flex-wrap flex-md-nowrap justify-content-center mt-5">
+			<!-- Texto -->
+			<div class="my-auto mx-5">
+				<h1 style="color:#182438;"><b>VIU UMA <br> IRREGULARIDADE?</b></h1>
 				<h1 class="text-white"><b>ME LIGA!</b></h1>
-				<hr style="border-color: white" />
-
+				<hr class="diagonal float-right m-0" />
+				<hr style="border-color: white; width: 95%;" class="float-left m-1" />
 			</div>
-			
-			<div class="col-md-3">
-				
+			<!-- Atendente -->
+			<div class="mx-5">
+				<img src="img/atendente.png">
 			</div>
+		</div>
+		<!-- Fim Atendente e texto -->
+	</div>
+	<!-- Fim Parte Principal -->
 
+	<!-- Começo Icones -->
+	<p class="my-0 my-md-5 invisible" name="Margin">3,1415</p> <!-- Margem Adicional -->
+	<div class="container justify-content-center justify-content-lg-center my-5">
+		<div class="d-flex flex-row flex-wrap flex-md-nowrap justify-content-md-between justify-content-center">
+			<div class="wraper">
+				<img src="img/denuncia.png" class="m-5 m-md-3" height="150px"><br>
+				<button class="btn btn-outline-info rounded-0 w-100">FAÇA SUA DENÚNCIA</button>
+			</div>
+			<div class="wraper" >
+				<img src="img/sugestao.png" class="m-5 m-md-3" height="150px"><br>
+				<button class="btn btn-outline-info rounded-0 w-100">FAÇA SUA SUGESTÃO</button>
+			</div>
+			<div class="wraper">
+				<img src="img/duvidas.png" class="m-5 m-md-3" height="150px"><br>
+				<button class="btn btn-outline-info rounded-0 w-100">TIRE DÚVIDAS</button>
+			</div>
 		</div>
 	</div>
+	<p class="my-0 my-md-5 invisible" name="Margin">3,1415</p> <!-- Margem Adicional -->
+	<p class="my-0 my-md-5 invisible" name="Margin">3,1415</p> <!-- Margem Adicional -->
+
+	<!-- Barra de Pesquisa -->
+	<div class="container justify-content-between">
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-10 col-lg-7 d-flex flex-row">
+				<img src="img/lupa.png" height="60px">
+				<div class="input-group border-bottom border-dark p-0 my-auto mx-2">
+					<input type="text" class="form-control border-0 rounded-0" name="protocolo" placeholder="Digite aqui o número de protocolo do seu relato.">
+					<div class="input-group-append my-2">
+						<button class="btn btn-outline-secondary rounded-0 py-0" >ENTER</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Fim Barra de Pesquisa -->
+
+	<p class="my-0 my-md-5 invisible" name="Margin">3,1415</p> <!-- Margem Adicional -->
+	<p class="my-0 my-md-5 invisible" name="Margin">3,1415</p> <!-- Margem Adicional -->
+
+	<div class="container-fluid px-0">
+    	<div class="row no-gutters mb-5">
+        	<div class="col-1 col-lg border-bottom border-dark"></div>
+				<div class="col-lg-8 col-10">
+                	<h2 class="border-bottom border-dark mb-0 pb-2 d-inline-block">JUNTOS CONSTRUÍMOS UM PAÍS MAIS ÉTICO</h2>
+				</div>
+			<div class="col-lg col-2"></div>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-lg-8 col-10 mx-auto text-justify mb-5">
+				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in venenatis metus, vitae semper eros. Nullam pretium maximus dui sed ornare. Phasellus sed malesuada nisi. Integer at justo turpis. Curabitur at ornare lectus. Morbi auctor eu velit ultrices pharetra. Nunc non mauris eget elit tempor vulputate nec nec lacus. Integer eget lorem vel dolor condimentum eleifend. Integer pharetra mattis finibus. Pellentesque in sodales velit. </p>
+				<p> In ultrices nunc quis orci ornare, vel sollicitudin turpis vestibulum. Donec porta nulla eu tortor laoreet, eget fringilla risus posuere. Ut volutpat, odio mollis sollicitudin gravida, eros nulla feugiat nisi, at ultrices urna tortor vitae diam. Nunc ut iaculis lectus. Suspendisse et sagittis dolor. Cras commodo posuere ligula, eget ultricies diam elementum at. Ut placerat tellus eu purus ultrices imperdiet. Aenean vel quam urna. Praesent diam turpis, tempor sit amet accumsan et, consectetur porttitor ligula. </p>
+			</div>
+		</div>
+	</div>
+
+	<p class="my-0 my-md-5 invisible" name="Margin">3,1415</p> <!-- Margem Adicional -->
+
+	<!-- Como funciona -->
+	<div class="container-fluid px-0">
+    	<div class="row no-gutters mb-5">
+        	<div class="col-1 col-lg border-bottom border-dark"></div>
+				<div class="col-lg-8 col-10">
+                	<h2 class="border-bottom border-dark mb-0 pb-2 d-inline-block">COMO FUNCIONA O CANAL DE DENÚNCIAS</h2>
+				</div>
+			<div class="col-lg col-2"></div>
+		</div>
+		<!-- Imagem de como funciona -->
+		<div class="row justify-content-center">
+			<div class="col-lg-8 col-10 mx-auto text-justify">
+				<img class="my-5" src="img/como_fun.png" width="100%">
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid justify-content-center justify-content-lg-between" style="background-color: #d9dade;">
+		<div class="container d-flex flex-row justify-content-lg-between justify-content-center flex-wrap flex-lg-nowrap">
+			<div class="row my-3 py-3 py-lg-0 my-lg-auto">
+				<img class="" src="img/contato_d.png"><br>
+			</div>
+			<div class="wraper">
+				<div class="col py-2 my-5 justify-content-center justify-content-md-between text-center text-md-left">
+					<!-- Informacoes de contato -->
+					<div class="col col-md-5 d-inline-block">
+						Porto Alegre/RS | Brasil<br>
+						Av. Carlos Gomes, 466 | sl.501<br>
+						CEP 90480-004<br>
+						Fone: +55 (51) 3086.1800
+					</div>
+					<div class="col col-md-6 d-inline-block mt-3 mt-lg-0">
+						São Paulo/SP | Brasil<br>
+						Av. Dr. Chucri Zaidan, 1550 | cj. 2502<br>
+						CEP 04711-130<br>
+						Fone: +55 (11) 5181.0545
+					</div>
+					<div class="w-100"></div>
+					<div class="col mt-5">© Copyright 2018 - Todos os direitos reservados. | Administrado por Contato Seguro.</div>
+				</div>
+			</div>
+			<div class="wraper my-auto">
+				<div class="col d-flex flex-lg-column ">
+					<!-- Ícones -->
+					<div class="col my-3 py-3">
+						<img src="img/linkedin.png">
+					</div>
+					<div class="col my-3 py-3">
+						<img src="img/youtube.png">
+					</div>
+					<div class="col my-3 py-3">
+						<img src="img/contato_m.png">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 </body>
 </html>
-191.199.204.182

@@ -19,37 +19,13 @@
 	padding-bottom: 5px;
 }
 
-.btn-main{
-	margin: 10px;
-	font-size: 15px;
-	color: white;
-	border-radius: 0;
-	border-color: white;
-}
-.no-border{
-	border: none;
-}
-.no-border:hover{
-	border: none;
-}
-.btn-main:hover{
-	color: white;
-	border-color: white;
-	background-color: transparent;
-	box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
-}
-.btn-main:active {
-	color: white;
-	border-color: white;
-	background-color: transparent;
-	background-color: rgba(255,255,255,0.1);
-}
-.btn-main:focus{
-	color: white;
-	background-color: transparent;
-	border-color: white;
-}
 .divisor{
-	margin: 10px;
+	margin: 5px;
 	border-color: #266c75;
+}
+.diagonal{
+	transform: rotate(135deg);
+	border-color: white;
+	margin: 0px;
+	width: 16px;
 }
